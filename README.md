@@ -45,6 +45,7 @@ GRNN is coded with cross validation GridSearchCV in order to search through vari
 The two error metrics – RMSE and R2 – are hard-coded in a function called evaluation written with Python in JupyterLab®. Each time MLP or GRNN is modeled, it calls evaluation function, which outputs the evaluation metrics RMSE and R2. 
 
 RESULTS AND DISCUSSION
+
 geoid_polynomial_surface_lagos.m code output adjusted parameters ai, RMSE and R2 for each surface model. The parameters so obtained were used to form the mathematical model. 
 geoid_surface_lagos,ipynb code output RMSE and R2 for both MLP and GRNN. It should be noted that ANN models do not output parameters. Hence, unlike polynomial models, there is no mathematical model to represent the MLP and GRNN model outputs. However, like other machine learning models, ANN are good at prediction. Thus, both MLP and GRNN produced predicted or interpolated values of N, the precision of which is measured by RMSE. 
 According to Wang (2016), global gravity models, such as EGM08, can be used to compute geoid heights to an accuracy of a few centimeters. Results of polynomial geoid surface and ANN geoid surface are compared to geoid heights computed using EGM08. 
